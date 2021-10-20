@@ -64,6 +64,12 @@ def get_all_superprimes(lst: list[int]):
     return rez
 
 def cmmdc(nr1: int, nr2: int):
+    '''
+    Calculeaza cmmdc a doua nr
+    :param nr1:  primul nr
+    :param nr2: al doilea nr
+    :return: cmmdc al celor doua numere
+    '''
     if nr2==0:
         return nr1
     return cmmdc(nr2, nr1%nr2)
@@ -84,6 +90,11 @@ def get_cmmdc(lst: list[int]):
 
 
 def get_invers(nr: int):
+    '''
+    calculeaza inversul unui numar negativ
+    :param nr: numarul negativ
+    :return: inversul lui nr
+    '''
     nr = nr * (-1)
     oglindit = 0
     while nr:
