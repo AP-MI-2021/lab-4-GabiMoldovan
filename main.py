@@ -124,8 +124,10 @@ def execute_tests():
 
     assert get_all_superprimes([23, 68]) == [23]
     assert get_all_superprimes([]) == []
-    
 
+    assert modifica_lista_cmmdc_ord_inversa([-76, 12, 24, -13, 144]) == [-67, 144, 144, -31, 144]
+    assert modifica_lista_cmmdc_ord_inversa([-13, -63, -745]) == [-31, -36, -547]
+    assert modifica_lista_cmmdc_ord_inversa([]) == []
     pass
 
 def main():
